@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Vasundhara Light Green Palette Extension */
+    --color-green-tint: #EBF8EE;
+    --color-green-soft: #D8F3DC;
+    --color-green-border: #B7E4C7;
+    --color-green-vibrant: #52B788;
+    --color-green-bright: #74C69D;
+  }
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+    letter-spacing: -0.011em;
+  }
+
+  /* Prevent iOS bounce causing horizontal drift */
+  #root {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+}
+
+/* Vasundhara Light Green Palette Accent Utilities */
+.bg-vasundhara-light {
+  background-color: #EBF8EE;
+}
+.bg-vasundhara-soft {
+  background-color: #D8F3DC;
+}
+.border-vasundhara-light {
+  border-color: #B7E4C7;
+}
+.border-vasundhara-vibrant {
+  border-color: #74C69D;
+}
+.text-vasundhara-light-dark {
+  color: #1B4332;
+}
+.text-vasundhara-vibrant {
+  color: #2D6A4F;
+}
+.text-vasundhara-bright {
+  color: #52B788;
+}
+
+/* Utility to hide scrollbars on mobile carousels while allowing touch scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
